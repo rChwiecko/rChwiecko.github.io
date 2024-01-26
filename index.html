@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="./styleTest.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
 </head>
 <body>
     <nav id="desktop-nav">
@@ -16,11 +16,13 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact ">Contact</a></li>
+                <img src="./assets/sun-moon-eclipse.svg" alt="darkmode" id="mode-btn" onclick="chng_mode()">
             </ul>
         </div>
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">Ryan Chwiecko</div>
+        <img src="./assets/sun-moon-eclipse.svg" alt="darkmode" id="mode-btn" onclick="chng_mode()">
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -31,7 +33,7 @@
                 <li><a href="#about" onclick="toggleMenu()">About</a> </li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
@@ -48,8 +50,8 @@
                 <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact info</button>
             </div>
             <div class="socials-container">
-                <img src="./assets/linkedin.png" alt="linkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/ryan-chwiecko-a63558264/'"> 
-                <img src="./assets/github.png" alt="github" class="icon" onclick="location.href='https://github.com/rChwiecko'">
+                <img id ="linkedIn" src="./assets/linkedin.png" alt="linkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/ryan-chwiecko-a63558264/'"> 
+                <img id ="gitHub" src="./assets/github.png" alt="github" class="icon" onclick="location.href='https://github.com/rChwiecko'">
             </div>
         </div>
     </section>
@@ -76,7 +78,7 @@
                 </div>
                 <div class="text-container">
                     <p>
-                        Hi! My name is Ryan and I was Born and raised in London, Ontario, I have always been deeply fascinated by the intricate and ever-evolving world of Cybersecurity ,Penetration Testing and Software Engineering. My passion lies at the intersection of technology and innovation, particularly in the realm of Web 3.0 – a space that continues to redefine the boundaries of digital interaction and security.
+                        Hi! My name is Ryan and I was Born and raised in London, Ontario, I have always been deeply fascinated by the intricate and ever-evolving world of Cybersecurity, Penetration Testing and Software Engineering. My passion lies at the intersection of technology and innovation, particularly in the realm of Web 3.0 – a space that continues to redefine the boundaries of digital interaction and security.
                     </p>
                 </div>
             </div>
@@ -109,7 +111,7 @@
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark" class="icon">
                             <div>
-                                <h3>TypeSript</h3>
+                                <h3>TypeScript</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
@@ -301,6 +303,7 @@
         </nav>
         <p>Copyright &#169; 2024 Ryan Chwiecko. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/darkLightMode.js"></script>
 </body>
 </html>
