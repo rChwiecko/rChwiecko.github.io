@@ -305,6 +305,7 @@ about {
     border: var(--font-grey) 0.1rem solid;
     border-color: var(--tertiary-color-back);
     text-align: center;
+    height: fit-content;
 }
 
 .section-container {
@@ -361,6 +362,7 @@ article .icon {
 
 #projects {
     position: relative;
+    display: block;
 }
 
 .color-container {
